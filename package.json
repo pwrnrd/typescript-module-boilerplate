@@ -6,7 +6,7 @@
     "lint": "eslint 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'",
     "format": "prettier --write 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'",
     "build": "rm -rf lib && tsc -p . && rm -fr lib/tests && mv lib/src/** lib/ && rm -fr lib/src",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
